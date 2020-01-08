@@ -1,6 +1,6 @@
 <div class="container" id="container">
     <div class="jumbotron" id="header">
-    <h1 id="eat"><strong>Eat-Da-Burger!</strong></h1>
+    <h1 id="eat"><strong>Eat the burger, won't ya?</strong></h1>
         <img src="/assets/img/burger.png" id="burger">
     </div>
 
@@ -10,7 +10,7 @@
             <form class="create-update-form" action="/burgers" method="POST">
 
 			<div class="form-group" id="add">
-                    <h3 class="title">What's in a name? <u>EVERYTHING</u>. Add your burger name here:</h3>
+                    <h3 class="title">A burger by any other name would taste just as juicy. But add your burger name here.</h3>
                     <br>
                     <textarea id="box" class="form-control input-lg" type="text" name="b_name" rows="3"></textarea>
                     </div>
@@ -23,7 +23,7 @@
    <hr id="line">
 		<div class="col-sm-4" id="yum">
 			<div class="panel-panel default">
-			<h3 class="title">Say hello to my little friend:</h3>
+			<h3 class="title">Say hello to my friend:</h3>
 				<ul class="list-group">
 				{{#each burgers}}
 					{{#unless this.devoured}}
@@ -33,7 +33,7 @@
 							<span class="input-group-btn">
 								<form action="burgers/{{this.id}}?_method=PUT" method="POST">
 									<input type="hidden" name="devoured" value="true">
-									<button id="button" class="btn btn-default btn-lg" type="submit">OM NOM NOM!</button>
+									<button id="button" class="btn btn-default btn-lg" type="submit">YUM!</button>
 								</form>
 							</span>
 						</div>
@@ -46,7 +46,7 @@
 </div>
 <div>
 		<div class="col-sm-4" id="devoured">
-		<h3 id="heaven">All good burgers go to heaven:</h3>
+		<h3 id="heaven">All of the best burgers go to heaven:</h3>
 			<div class="panel panel-default">
 				<ul class="list-group">
 				{{#each burgers}}
@@ -62,4 +62,3 @@
 	</div>
 </div>
 
-<iframe src="https://giphy.com/embed/HQ2Slp9yEkX72" width="480" height="204" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
