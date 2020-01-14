@@ -23,9 +23,9 @@ app.listen(port);
 console.log("Listening on PORT " + port);
 
 // Timeout
-app.use(timeout(15000));
-app.use(haltOnTimedout);
+// app.use(timeout(15000));
+// app.use(haltOnTimedout);
 
-function haltOnTimedout(req, res, next) {
-    if (!req.timedout) next();
-}
+// function haltOnTimedout(req, res, next) {
+//     if (!req.timedout) next();
+// }
